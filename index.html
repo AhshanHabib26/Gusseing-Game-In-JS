@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusseing Game</title>
+     <!-- Favicon Link  -->
+     <link rel="icon" type="image/x-icon" href="img/habib_favicon.png">
+    <!-- Style CSS Link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header_area">
+        <h1> Guesses Your 🤔 Number?</h1>
+        <h4>Try and guess a random number between 1 and 10</h4>
+    </header>
+    <section class="input_section">
+        <div class="input_area">
+            <input type="text" id="input_field" placeholder="Enter Your Number">
+        </div>
+        <div class="btn_area">
+            <button id="btn_field" type="submit">Gusses</button>
+        </div>
+    </section>
+
+    <section class="result_info">
+        <div class="ur_gusses">
+            <h2>Your Guess: <span id="gusses_1"> 0 </span> </h2>
+        </div>
+        <div class="rand_gusses">
+            <h2>Random Guesses: <span id="gusses_2"> 0 </span> </h2>
+        </div>
+    </section>
+    <section class="error_msg">
+        <p id="valid_error">Please Provide Valid & Positive Number</p>
+        <p id="wrong_error">Please! Try Again.........🥱 </p>
+        <p id="correct_error">Wowwww! You Are Rock. Keep It Up 😎 </p>
+    </section>
+
+    <footer>
+        <p>Design & Develop <a href="https://github.com/AhshanHabib26">Ahshan Habib</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

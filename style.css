@@ -1,0 +1,89 @@
+body{
+    width: 1020px;
+    max-width: 96%;
+    margin: 0 auto;
+    text-align: center;
+}
+.header_area h1{
+    font-size: 42px;
+    color: #363636;
+}
+.input_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.input_section input{
+    width: 300px;
+    height: 50px;
+    border: 1px solid #969696;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.input_section button{
+    width: 120px;
+    height: 55px;
+    border: 1px solid #969696;
+    border-left: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #d56bff;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+#valid_error,
+#wrong_error,
+#correct_error{
+    font-size: 22px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    display: none;
+}
+
+#valid_error{
+    background-color: #d2691e;
+}
+#wrong_error{
+    background-color: #fd4133;
+}
+#correct_error{
+    background-color: #04c25a;
+}
+
+.result_info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    color: #363636;
+}
+
+
+footer p{
+    font-size: 18px;
+    margin-top: 50px;
+    color: #363636;
+}
+
+
+/* Responsive Strat Here  */
+@media only screen and (max-width: 470px) {
+    .header_area h1 { font-size: 32px;}
+    .input_section{ flex-direction: column;}
+    .input_section input{ border-radius: 10px;}
+    .input_section button{ 
+        border-bottom-left-radius: 10px; 
+        border-bottom-right-radius: 10px; 
+        border-top-right-radius: 0;
+    }
+    .result_info{ grid-template-columns: repeat(1, 1fr);}
+  }
+
